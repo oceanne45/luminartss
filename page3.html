@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site.html - Luminarts</title>
+    <link rel="stylesheet" href="StyleSheet.css" rel="stylesheet">
+    <style>
+        .product-heading {
+            font-size: 3rem;  /* Taille de police en gros */
+            font-weight: bold; /* Texte en gras */
+            text-align: center; /* Centré horizontalement */
+            margin-top: 10vh; /* Position verticale approximativement au milieu */
+            color: #8a9a8a; /* Couleur grise-verte similaire à l'image */
+            margin-bottom: 20px;
+        }
+
+        .contact-description {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: #8a9a8a;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto 100px; /* Marge inférieure pour éviter que le formulaire soit caché par le footer */
+            padding: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        /* --- Modification ici --- */
+        .contact-form textarea {
+            height: 150px;
+            resize: none; /* Désactive le redimensionnement */
+        }
+        /* --- Fin de la modification --- */
+
+        .contact-form button {
+            background-color: #8a9a8a;
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+            display: flex; /* Peut être changé en block pour centrer avec margin auto */
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+            text-align: center;
+            /* Pour centrer le bouton plus simplement : */
+            /* display: block; */
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+        }
+
+        .contact-form button:hover {
+            background-color: #748374;
+        }
+
+        /* Style pour la barre de copyright */
+        .copyright {
+            background-color: #8a9a8a; /* Changé pour correspondre à la couleur du bouton */
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            position: fixed; /* Reste fixe au défilement */
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Luminarts</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="page2.html">Products</a></li>
+                <li><a href="page3.html">Contact</a></li>
+                <button type="button">Sign In</button>
+                <button type="button">Login</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Titre de la page -->
+    <div class="product-heading">Contact us</div>
+
+    <!-- Description du formulaire -->
+    <p class="contact-description">
+        Complete the form below to contact us we'll respond as soon as possible. Additional fees may apply for custom orders.
+    </p>
+
+    <!-- Formulaire de contact -->
+    <div class="contact-form">
+        <form>
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email *" required>
+            </div>
+
+            <div class="form-row">
+                <input type="tel" name="phone" placeholder="Phone number">
+            </div>
+
+            <div class="form-row">
+                <textarea name="Comment" placeholder="Comment *" required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Barre de copyright -->
+    <footer class="copyright">
+        © 2025 Luminarts. All Rights Reserved.
+    </footer>
+</body>
+</html>

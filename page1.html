@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site.html - Luminarts</title>
+    <link rel="stylesheet" href="StyleSheet.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 60px; /* Espace pour le footer */
+        }
+.product-heading {
+        font-size: 3rem;  /* Taille de police en gros */
+        font-weight: bold; /* Texte en gras */
+        text-align: center; /* Centré horizontalement */
+        margin-top: 20vh; /* Position verticale approximativement au milieu */
+    }
+    
+    .shop-section {
+        display: flex;
+        max-width: 1200px;
+        margin: 50px auto;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .product-image {
+        flex: 1;
+        max-width: 50%;
+        background-color: #e0e0e0; /* Couleur grise pour l'image vide */
+        min-height: 400px; /* Hauteur minimale pour l'espace vide */
+    }
+    
+    .shop-content {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .shop-title {
+        font-size: 2.5rem;
+        color: #8a9a8a;
+        margin-bottom: 20px;
+    }
+    
+    .shop-description {
+        font-size: 1rem;
+        color: hsl(120, 7%, 57%);
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+    
+    .shop-button {
+        background-color: #8a9a8a;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        width: fit-content;
+        text-decoration: none;
+        display: inline-block;
+  
+    }
+    
+    /* Style pour la barre de copyright */
+    .copyright {
+        background-color: #8a9a8a;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Luminarts</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="page2.html">Products</a></li>
+                <li><a href="page3.html">Contact</a></li>
+                <button type="button">Sign In</button>
+                <button type="button">Login</button>
+            </ul>
+        </nav>
+    </header>
+<!-- Section Shop avec espace vide à la place de l'image -->
+<div class="shop-section">
+    <div class="product-image">
+        <!-- Espace vide pour l'image -->
+    </div>
+    <div class="shop-content">
+        <h2 class="shop-title">Shop now !</h2>
+        <p class="shop-description">Here you will find all kinds of homemade figurines such as keychain.</p>
+        <a href="page2.html" class="shop-button">See products</a>
+    </div>
+</div>
+
+<!-- Barre de copyright -->
+<footer class="copyright">
+    © 2025 Luminarts. All Rights Reserved.
+</footer>
+</body>
+</html>
